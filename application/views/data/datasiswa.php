@@ -24,7 +24,7 @@
            </div>
            <!-- /.card-header -->
 
-           <a class="btn btn-primary" href="<?= base_url("Data/tambahdatasiswa") ?>">Tambah Data Siswa</a>
+           <a class="btn btn-dark" href="<?= base_url("Data/tambahdatasiswa") ?>">Tambah Data Siswa</a>
            <table id="example1" class="table table-bordered table-striped">
              <thead class="thead-dark">
                <tr>
@@ -51,15 +51,14 @@
                    <td><?= $siswa["jk"]; ?></td>
                    <td><?= $siswa["kelas"]; ?></td>
                    <td>
-
-
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opsi</a>
-
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <a class="dropdown-item" href="<?= base_url('Data/edit_datasiswa/') .  $siswa["id_siswa"]; ?>">Edit</a>
-                       <a onclick="return confirm('Apakah anda ingin menghapus data ini?')" class="dropdown-item" href="<?= base_url('Data/hapus_datasiswa/') . $siswa["id_siswa"];  ?>">Hapus</a>
-
-
+                     <div class="btn-group">
+                       <button type="button" class="btn btn-dark">Aksi</button>
+                       <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="sr-only">Toggle Dropdown</span>
+                       </button>
+                       <div class="dropdown-menu">
+                         <a class="dropdown-item" href="<?= base_url('Data/edit_datasiswa/') . $siswa["id_siswa"]; ?>">Edit</a>
+                         <a onclick="return confirm('Apakah anda ingin menghapus data ini?')" class="dropdown-item" href="<?= base_url('Data/hapus_datasiswa/') . $siswa["id_siswa"];  ?>">Hapus</a>
                    </td>
                  </tr>
                  <?php $nomer++; ?>

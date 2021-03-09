@@ -4,14 +4,8 @@
             <div class="col-sm-12">
                 <nav>
                     <ol class="breadcrumb bg-transparent pl-0">
-                        <li class="breadcrumb-item">
-                            <a href="<?= base_url('User'); ?>">
-                                <h5>Home</h5>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            <h5>Daftar Siswa</h5>
-                        </li>
+                        <li class="breadcrumb-item"><a href="<?= base_url('User'); ?>">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data Siswa</li>
                     </ol>
                 </nav>
                 <div class="row">

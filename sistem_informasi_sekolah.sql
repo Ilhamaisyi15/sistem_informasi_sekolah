@@ -76,20 +76,20 @@ INSERT INTO `tb_guru` (`id_guru`, `nip`, `nama`, `alamat`, `pendidikan`, `mapel`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_misivisi`
+-- Table structure for table `tb_visimisi`
 --
 
-CREATE TABLE `tb_misivisi` (
-  `id_misi` int(11) NOT NULL,
+CREATE TABLE `tb_visimisi` (
+  `id_visimisi` int(11) NOT NULL,
   `judul` varchar(25) NOT NULL,
   `isi` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_misivisi`
+-- Dumping data for table `tb_visimisi`
 --
 
-INSERT INTO `tb_misivisi` (`id_misi`, `judul`, `isi`) VALUES
+INSERT INTO `tb_visimisi` (`id_visimisi`, `judul`, `isi`) VALUES
 (1, 'visi', 'Alam Raya Sekolahku..'),
 (2, 'misi', 'si ilham ko ganteng bett sih??');
 
@@ -171,10 +171,10 @@ ALTER TABLE `tb_guru`
   ADD PRIMARY KEY (`id_guru`);
 
 --
--- Indexes for table `tb_misivisi`
+-- Indexes for table `tb_visimisi`
 --
-ALTER TABLE `tb_misivisi`
-  ADD PRIMARY KEY (`id_misi`);
+ALTER TABLE `tb_visimisi`
+  ADD PRIMARY KEY (`id_visimisi`);
 
 --
 -- Indexes for table `tb_sejarah`
@@ -217,10 +217,10 @@ ALTER TABLE `tb_guru`
   MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `tb_misivisi`
+-- AUTO_INCREMENT for table `tb_visimisi`
 --
 ALTER TABLE `tb_misivisi`
-  MODIFY `id_misi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_visimisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_sejarah`

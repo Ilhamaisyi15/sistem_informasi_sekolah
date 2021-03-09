@@ -35,7 +35,7 @@ class Model_siswa extends CI_Model
     {
         $id_visi = "1";
 
-        return $this->db->get_where('tb_visimisi', ['id_misi' => $id_visi])->row_array();
+        return $this->db->get_where('tb_visimisi', ['id_visimisi' => $id_visi])->row_array();
     }
 
     public function getidsiswa($id_siswa)

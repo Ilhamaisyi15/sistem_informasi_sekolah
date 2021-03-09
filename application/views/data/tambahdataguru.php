@@ -3,10 +3,9 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 ">Data Guru</h1>
+                    <!-- <h1 class="m-0 ">Data Guru</h1> -->
                 </div>
                 <div class="col-sm-6">
-
                 </div>
             </div>
         </div>
@@ -16,7 +15,7 @@
             <div class="row">
                 <div class="col-md-8">
 
-                    <div class="card card-primary ">
+                    <div class="card card-dark ">
                         <div class="card-header">
                             <h3 class="card-title"><?= $judul;  ?></h3>
                         </div>
@@ -83,7 +82,7 @@
 
                             </div>
 
-                            <button name="submit" type="submit" class="btn btn-primary">Tambah Data</button>
+                            <button name="submit" type="submit" class="btn btn-dark">Tambah Data</button>
 
                     </form>
                 </div>

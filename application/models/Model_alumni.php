@@ -22,7 +22,7 @@ class Model_alumni extends CI_Model
             'nisn' => $nisn,
             'nama' => $nama,
             'alamat' => $alamat,
-            'th_lulus' => $th_lulus,
+            'th_lulus' => $th_lulus
         );
 
         $this->db->insert('tb_alumni', $data);

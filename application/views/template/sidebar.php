@@ -9,7 +9,7 @@
         <img src="<?= base_url("asset/"); ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Ilham Ganteng</a>
+        <a href="#" class="d-block">Ilham Aisyi</a>
       </div>
     </div>
 
@@ -23,21 +23,21 @@
           <a href="<?= base_url("Dashboard/index") ?>" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
-              Dasboard
+              Dashboard
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="<?= base_url("Dashboard/dataUser") ?>" class="nav-link">
+        <li class="nav-item mt-1">
+          <a href="<?= base_url("Dashboard/user") ?>" class="nav-link">
             <i class="nav-icon fas fa-user"></i>
             <p>
               User
             </p>
           </a>
         </li>
-        <i class="nav-item">
+        <i class="nav-item mt-1">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-file"></i>
+            <i class="nav-icon fas fa-school"></i>
             <p>
               Tentang Kami
               <i class="fas fa-angle-left right"></i>
@@ -45,13 +45,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?= base_url("Tentangkami/sejarah") ?>" class="nav-link">
+              <a href="<?= base_url("Dashboard/sejarah") ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Sejarah</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url("Tentangkami/visimisi") ?>" class="nav-link">
+              <a href="<?= base_url("Dashboard/visimisi") ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Visi Misi</p>
               </a>
@@ -63,28 +63,28 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url("Tentangkami/tatatertib") ?>" class="nav-link">
+              <a href="<?= base_url("Dashboard/tatatertib") ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tata Tertib</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url("Tentangkami/fasilitas") ?>" class="nav-link">
+              <a href="<?= base_url("Dashboard/fasilitas") ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Fasilitas</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url("Tentangkami/prestasi") ?>" class="nav-link">
+              <a href="<?= base_url("Dashboard/prestasi") ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Prestasi</p>
               </a>
             </li>
           </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mt-1">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
+              <i class="nav-icon fas fa-book-open"></i>
               <p>
                 Warga Sekolah
                 <i class="fas fa-angle-left right"></i>
@@ -110,37 +110,37 @@
                 </a>
               </li>
             </ul>
-            <i class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-file"></i>
+            <i class="nav-item mt-1">
+              <a href="<?= base_url("Informasi/berita") ?>" class="nav-link">
+                <i class="nav-icon far fa-newspaper"></i>
                 <p>
                   Berita
                 </p>
               </a>
-              <i class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+              <i class="nav-item mt-1">
+                <a href="<?= base_url('Informasi/ekskul') ?>" class="nav-link">
+                  <i class="nav-icon fas fa-info-circle"></i>
                   <p>
                     Ekstrakulikuler
                   </p>
                 </a>
-                <i class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-file"></i>
+                <i class="nav-item mt-1">
+                  <a href="<?= base_url('Informasi/galeri') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-images"></i>
                     <p>
                       Galeri
                     </p>
                   </a>
-                  <i class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-file"></i>
+                  <i class="nav-item mt-1">
+                    <a href="<?= base_url('Informasi/ppdb'); ?>" class="nav-link">
+                      <i class="nav-icon fas fa-archive"></i>
                       <p>
                         Laporan PPDB
                       </p>
                     </a>
-                    <i class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-file"></i>
+                    <i class="nav-item mt-1">
+                      <a href="<?= base_url('Auth/logout'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                           Logout
                         </p>

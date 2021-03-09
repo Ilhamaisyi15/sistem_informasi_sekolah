@@ -4,26 +4,41 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Model_admin extends CI_Model
 {
 
-    public function tambahUser()
+    public function dataUser()
     {
-        $username = htmlspecialchars($this->input->post('username'));
-        $email = htmlspecialchars($this->input->post('email'));
-        $image = "default.jpg";
-        $password =  password_hash($this->input->post('password-1'), PASSWORD_DEFAULT);
-        $role_id = 1;
-        $is_active = 1;
-        $date_created = time();
+        return $this->db->get('user')->result_array();
+    }
 
-        $data = [
-            'username' => $username,
+    public function tambahDataUser()
+    {
+
+        $name = htmlspecialchars($this->input->post('name', true));
+        $email = htmlspecialchars($this->input->post('email', true));
+        $password = password_hash($this->input->post('password1'), PASSWORD_DEFAULT);
+        $aktif = "1";
+        $role = "1";
+
+        $data = array(
+            'name' => $name,
             'email' => $email,
-            'image' => $image,
             'password' => $password,
-            'role_id' => $role_id,
-            'is_active' => $is_active,
-            'date_created' => $date_created
-        ];
+            'is_active' => $aktif,
+            'role_id' => $role
+        );
 
-        $this->db->insert('tbl_user', $data);
+        $this->db->insert('user', $data);
+    }
+
+    public function hapusDataUser($id)
+    {
+        return $this->db->delete('user', ['id' => $id]);
+    }
+
+    public function getUser()
+    {
+
+        $user = $this->session->userdata('email');
+
+        return $this->db->get_where('user', ['email' => $user])->row_array();
     }
 }

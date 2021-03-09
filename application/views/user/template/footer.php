@@ -2,7 +2,7 @@
 <footer class="footer fixed-bottom py-4">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+            <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2021</div>
 
         </div>
     </div>

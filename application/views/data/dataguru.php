@@ -21,7 +21,7 @@
            <div class="card">
            </div>
            <!-- /.card-header -->
-           <a class="btn btn-primary" href="<?= base_url("Data/tambahdataguru") ?>">Tambah Data Guru</a>
+           <a class="btn btn-dark" href="<?= base_url("Data/tambahdataguru") ?>">Tambah Data Guru</a>
            <table id="example1" class="table table-bordered table-striped">
              <thead class="thead-dark">
                <tr>
@@ -40,18 +40,21 @@
                <?php foreach ($dataguru as $siswa) : ?>
                  <tr>
                    <td><?= $nomer; ?></td>
-                   <td><img width="120px" height="120px" class="img-thumbnail" src="<?= base_url('asset/gambar/guru/') . $siswa['foto']; ?>" alt="<?= $siswa["nama"]; ?>"></td>
+                   <td><img width="80px" height="80px" class="img-thumbnail" src="<?= base_url('asset/gambar/guru/') . $siswa['foto']; ?>" alt="<?= $siswa["nama"]; ?>"></td>
                    <td><?= $siswa["nip"]; ?></td>
                    <td><?= $siswa["nama"]; ?></td>
                    <td><?= $siswa["alamat"]; ?></td>
                    <td><?= $siswa["pendidikan"]; ?></td>
                    <td><?= $siswa["mapel"]; ?></td>
                    <td>
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opsi</a>
-
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <a class="dropdown-item" href="<?= base_url('Data/edit_dataguru/') .  $siswa["id_guru"]; ?>">Edit</a>
-                       <a onclick="return confirm('Apakah anda ingin menghapus data ini?')" class="dropdown-item" href="<?= base_url('Data/hapus_dataguru/') . $siswa["id_guru"];  ?>">Hapus</a>
+                     <div class="btn-group">
+                       <button type="button" class="btn btn-dark">Aksi</button>
+                       <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="sr-only">Toggle Dropdown</span>
+                       </button>
+                       <div class="dropdown-menu">
+                         <a class="dropdown-item" href="<?= base_url('Data/edit_dataguru/') . $siswa["id_guru"]; ?>">Edit</a>
+                         <a onclick="return confirm('Apakah anda ingin menghapus data ini?')" class="dropdown-item" href="<?= base_url('Data/hapus_dataguru/') . $siswa["id_guru"];  ?>">Hapus</a>
                    </td>
 
                  </tr>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>SMP Pangeran Diponegoro</title>
+    <title>Selamat Datang Di SMP Pangeran Diponegoro</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -17,138 +17,195 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?= base_url('asset/template_user/'); ?>css/styles.css" rel="stylesheet" />
 </head>
+<header>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</header>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
         <div class="container">
-            <div class="row">
-                <div class="col-8">
-
+            <div class="navbar-header">
+                <div class="image">
+                    <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="50" height="50" class="img-circle elevation-2" alt="">
                 </div>
-
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="<?= base_url('asset/template_user'); ?>assets/img/navbar-logo.svg" alt="" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ml-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Beranda">Home</a></li>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Kami </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="<?= base_url('User/sejarah'); ?>">Sejarah</a>
-                            <a class="dropdown-item" href="<?= base_url("User/visi");  ?>">Visi & Misi</a>
+                            <a class="dropdown-item" href="<?= base_url("User/visimisi");  ?>">Visi & Misi</a>
                             <a class="dropdown-item" href="<?= base_url("User/struktur");  ?>">Struktur Organisasi</a>
                             <a class="dropdown-item" href="<?= base_url("User/fasilitas"); ?>">Fasilitas</a>
                             <a class="dropdown-item" href="<?= base_url("User/tatatertib"); ?>">Tata Tertib</a></a>
                             <a class="dropdown-item" href="<?= base_url("User/prestasi"); ?>">Prestasi</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warga Sekolah </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Warga Sekolah
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="<?= base_url("User/dataGuruUser"); ?>">Daftar Guru</a>
                             <a class="dropdown-item" href="<?= base_url("User/DataSiswaUser"); ?>">Daftar Siswa</a>
                             <a class="dropdown-item" href="<?= base_url("User/dataAlumniUser"); ?>">Daftar Alumni</a>
                             </a>
+                        </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Berita">Berita</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Acara">Acara</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Galeri">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Kritik & Saran">PPDB</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Login">Login</a></li>
-
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/berita"); ?>">Berita</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ekskul"); ?>">Ekstrakulikuler</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/galeri"); ?>">Galeri</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ppdb"); ?>">PPDB</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url('Auth'); ?>">Login</a></li>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Selamat Datang di Website SMP Pangeran Diponegoro</div>
-            <div class="masthead-heading text-uppercase"><?= $visi['isi'];  ?></div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-        </div>
+    <header>
+        <section id="slider" class="owl-carousel owl-theme">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Gambar - 1" width="1400" height="700">
+                        <div class="carousel-caption">
+                            <h3>Slide 1</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/selyn1.jpg" alt="Gambar - 2" width="1400" height="700">
+                        <div class="carousel-caption">
+                            <h3>Slide 2</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/selyn2.jpg" alt="Gambar - 3" width="1400" height="700">
+                        <div class="carousel-caption">
+                            <h3>Slide 3</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+        </section>
     </header>
     <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container ">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase mb-5">Sambutan Kepala Sekolah</h2>
-            </div>
-            <div class="row mt-3 justify-content-center mb-5">
-                <div class="col-sm-4 offset-1 ">
-                    <img width="350px" height="350px" class="img-fluid rounded " src="<?= base_url('asset/template_user/'); ?>assets/img/team/img-kepala.png" alt="">
-
-                </div>
-                <div class="col-sm-6 ">
-                    <p>
-                    <h4>Tuan Guru Bajang Ilham Aisyi M.Hum</h4>
-                    </p>
-                    <p class="text-justify text-muted mt-3 ">
-                        Bismillahhirrahmanirrahim, Assalamualaikum warahmatullahi wabarakatuh, Salam Sejahtera bagi kita semua, Shalom, Om Swastyastu, Namo Budhaya, Salam Kebajikan.
-                    </p>
-                    <p class="text-justify text-muted mt-3">
-                        Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa,bahwasanya dengan Rahmat dan Karunia-Nya lah Website sekolah ini dengan url www.smp-diponegoro.sch.id dapat kami wujudkan. Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama (SMP) Pangeran Diponegoro Batuagung yang saya tunjukan untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses seluruh informasi tentang segala profil, aktifitas/kegiatan serta fasilitas sekolah kami.
-                    </p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="<?= base_url('asset/template_user/'); ?>assets/img/team/1.jpg" alt="" />
-                        <h4>Mega Kusmayati</h4>
-                        <p class="text-muted">Wakil Kepala 1</p>
-                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eius eveniet aliquid repellendus porro pariatur aperiam vero a iusto placeat quod cumque voluptates vel in voluptate reprehenderit nostrum, nihil cum.</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="<?= base_url('asset/template_user/'); ?>assets/img/team/3.jpg" alt="" />
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Wakil Kepala 2</p>
-                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eius eveniet aliquid repellendus porro pariatur aperiam vero a iusto placeat quod cumque voluptates vel in voluptate reprehenderit nostrum, nihil cum.</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="<?= base_url('asset/template_user/'); ?>assets/img/team/2.jpg" alt="" />
-                        <h4>Kiki Agustin</h4>
-                        <p class="text-muted">Wakil Kepala 3</p>
-                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eius eveniet aliquid repellendus porro pariatur aperiam vero a iusto placeat quod cumque voluptates vel in voluptate reprehenderit nostrum, nihil cum.</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Berita Terkini</h2>
+            <section class="page-section" id="services">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Tentang Kami</h2>
+                        <br><br>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Pengajar Yang Berpengalaman</h4>
+                            <p class="text-muted">
+                                Guru pengajar SMP Pangeran Diponegoro merupakan pengajar dengan keahlian di bidang mata pelajaran masing-masing, serta penerapan pembelajaran yang
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Perpustakaan SMP Pangeran Diponegoro</h4>
+                            <p class="text-muted">
+                                Perpustakaan sekolah menyediakan beraneka ragam sumber bacaan dan referensi, serta merupakan tempat belajar dengan berbagai fasilitas yang ada.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-university fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Fasilitas Pembelajaran Yang Lengkap</h4>
+                            <p class="text-muted">
+                                SMP Pangeran Diponegoro memiliki beberapa fasilitas pendukung pembelajaran yang lengkap, diantaranya Laboraturium, Prakarya, Lab.Agama, Lapangan Bola, Lapangan Voli, dll.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Prestasi Sekolah</h4>
+                            <p class="text-muted">
+                                Prestasi sekolah yang diperoleh bermacam-macam, mulai dari bidang akademik maupun non akademik dengan prestasi tingkat daerah maupun nasional.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-universal-access fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Bermacam Ekstrakulikuler</h4>
+                            <p class="text-muted">
+                                Pilihan ekstrakurikuler di SMP Pangeran Diponegoro bermacam-macam adanya, mulai dari bidang akademik, olahraga, kesenian, dan lain sebagainya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-sm-8">
+                <h4 class="text-center mb-6">Berita Terkini</h4>
             </div>
             <div class="row mt-5">
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <div class="row">
                         <div class="col-sm-6 mb-4">
                             <a href="">
                                 <div class="card" style="width: 100%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h4 class="text-black-50">Gunung Everest</h4>
-                                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="text-black-50">Gunung Everest</h5>
+                                        <p class="card-text text-black-50">Ini adalah gunung everest..</p>
                                     </div>
                                 </div>
                             </a>
@@ -158,8 +215,8 @@
                                 <div class="card" style="width: 100%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-2.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h4 class="text-black-50">London Kota</h4>
-                                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="text-black-50">London Kota</h5>
+                                        <p class="card-text text-black-50">Ini kota london lho..</p>
                                     </div>
                                 </div>
                             </a>
@@ -189,174 +246,88 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-4">
+                    <h4 class="text-center mb-3">Sambutan Kepala Sekolah</h4>
+                    <p class="text align-center">
+                    <h6 class="text-muted text-center">Siti Khulasoh, S. Th.I</h6>
+                    </p>
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/img-kepala.png" width="200" height="200" class="img-fluid rounded " alt="">
+                            <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/kepalasekolah.jpg" width="200" height="200" class="img-fluid rounded " alt="">
                         </div>
                         <div class="col-sm-6">
-                            <h4>Ibu Kita Kartini</h4>
 
                             <p class="text-justify">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus aliquam nostrum assumenda mollitia voluptas eaque omnis, autem eum blanditiis ipsam enim inventore eligendi dolorem eligendi dolorem
+                                Bismillahhirrahmanirrahim, Assalamualaikum warahmatullahi wabarakatuh, Salam Sejahtera bagi kita semua, Shalom, Om Swastyastu, Namo Budhaya, Salam Kebajikan.
                             </p>
                         </div>
                     </div>
                     <p class="text-justify">
-                        alias mollitia expedita voluptatum impedit cumque officia quas natus esse, perspiciatis maiores a eveniet rem fugiat. Laborum id dicta numquam ullam esse voluptatum assumenda rem inventore veritatis. Id quod quibusdam possimus? Libero quidem ratione nisi temporibus reiciendis quod tempora doloribus molestiae optio placeat consequatur officia, mollitia sed minima rem a quia eos iusto commodi minus?
+                        Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa,bahwasanya dengan Rahmat dan Karunia-Nya lah Website sekolah ini dengan url www.smp-diponegoro.sch.id dapat kami wujudkan. Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama (SMP) Pangeran Diponegoro Batuagung yang saya tunjukan untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses seluruh informasi tentang segala profil, aktifitas/kegiatan serta fasilitas sekolah kami.
                     </p>
                 </div>
-            </div>
 
-            <div class="container mb-5">
-                <div class="text-center mt-5 mb-5">
-                    <h2 class="section-heading text-uppercase">Galery Sekolah</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="container">
+                    <div class="col-sm-6">
+                        <div class="text-center mt-5 mb-5">
+                            <h4 class="section-heading text-uppercase">Galery Sekolah</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Ruang Guru</div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/01-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Ruang Guru</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Perpustakaan</div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/02-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Perpustakaan</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Ruangan Belajar</div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/03-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Ruangan Belajar</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Kantin</div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/04-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Kantin</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/05-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Lapangan Olahraga</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/06-thumbnail.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Taman Bermain</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase mb-5">EkstraKulikuler</h2>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/about/1.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Pramuka</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/about/2.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Paskibra</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/about/3.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Bola Basket</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="<?= base_url('asset/template_user/'); ?>assets/img/about/4.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Bola Voly</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Dan Masih
-                            <br />
-                            Banyak Lagi
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </section>
     <!-- Team-->
     <!-- <section class="page-section bg-light" id="team">
@@ -424,14 +395,14 @@
         </div>
     </div> -->
     <!-- Contact-->
-    <section class="page-section" id="contact">
+    <!-- <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase mb-5">Contact Us</h2>
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2972304002437!2d109.09162241414667!3d-7.0915036714890345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f94208e4cc003%3A0xea3cdd30014a1be!2sSMP%20Pangeran%20Diponegoro!5e0!3m2!1sid!2sid!4v1610275409124!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2972304002437!2d109.09162241414667!3d-7.0915036714890345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f94208e4cc003%3A0xea3cdd30014a1be!2sSMP%20Pangeran%20Diponegoro!5e0!3m2!1sid!2sid!4v1610275409124!5m2!1sid!2sid" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5">
@@ -441,11 +412,11 @@
                         </div>
                         <br>
                         <div class="col-sm-1">
-                            <h4 class="text-white">:</h4>
+                            <h5 class="text-white">:</h5>
                         </div>
                         <br>
                         <div class="col-sm-8">
-                            <h4 class="text-white">0283-7793901</h4>
+                            <h5 class="text-white">0283-7793901</h5>
                         </div>
                     </div>
                     <br>
@@ -454,23 +425,76 @@
                             <i class="fa-2x fas fa-home text-white"></i>
                         </div>
                         <div class="col-sm-1">
-                            <h4 class="text-white">:</h4>
+                            <h5 class="text-white">:</h5>
                         </div>
                         <div class="col-sm-8">
-                            <h4 class="text-white">Jl. Raya Batuagung No.1 Desa Batuagung, Kecamatan Balapulang, Kabupaten Tegal</h4>
+                            <h5 class="text-white">Jl. Raya Batuagung No.1 Desa Batuagung, Kecamatan Balapulang, Kabupaten Tegal</h5>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Footer-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase mb-5">Contact Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2972304002437!2d109.09162241414667!3d-7.0915036714890345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f94208e4cc003%3A0xea3cdd30014a1be!2sSMP%20Pangeran%20Diponegoro!5e0!3m2!1sid!2sid!4v1610275409124!5m2!1sid!2sid" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <i class=" fa-2x fas fa-phone-alt text-white"></i>
+                        </div>
+                        <br>
+                        <div class="col-sm-1">
+                            <h5 class="text-white">:</h5>
+                        </div>
+                        <br>
+                        <div class="col-sm-8">
+                            <h5 class="text-white">0283-7793901</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <i class=" fa-2x fas fa-comments text-white"></i>
+                        </div>
+                        <br>
+                        <div class="col-sm-1">
+                            <h5 class="text-white">:</h5>
+                        </div>
+                        <br>
+                        <div class="col-sm-8">
+                            <h5 class="text-white">ilhamaisyinurrizki@gmail.com</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <i class="fa-2x fas fa-home text-white"></i>
+                        </div>
+                        <div class="col-sm-1">
+                            <h5 class="text-white">:</h5>
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="text-left text-white">Jl. Raya Batuagung No.1 Desa Batuagung, Kecamatan Balapulang, Kabupaten Tegal</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
-
+                <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2020</div>
             </div>
         </div>
     </footer>
@@ -625,36 +649,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal"><img src="<?= base_url('asset/template_user/'); ?>assets/img/close-icon.svg" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="<?= base_url('asset/template_user/'); ?>assets/img/portfolio/06-full.jpg" alt="" />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2020</li>
-                                    <li>Client: Window</li>
-                                    <li>Category</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fas fa-times mr-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

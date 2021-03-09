@@ -1,50 +1,53 @@
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0"><?= $judul; ?></h1>
-                    <br>
-
-                    <form role="form" action="" method="POST">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" value="<?= set_value('username'); ?>">
-                                <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
-                            </div>
-                            <div class=" form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" value="<?= set_value('email'); ?>">
-                                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
-                            </div>
-                            <div class=" form-group">
-                                <label for="password-1">Password</label>
-                                <input type="password" name="password-1" class="form-control" id="password-1" placeholder="Password">
-                                <?= form_error('password-1', '<small class="text-danger pl-3">', '</small>'); ?>
-                            </div>
-                            <div class="form-group">
-                                <label for="password-2">Konfirmasi Password</label>
-                                <input type="password" class="form-control" name="password-2" id="password-2" placeholder="Konfirmasi Password">
-                                <?= form_error('password-2', '<small class="text-danger pl-3">', '</small>'); ?>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Tambah Data User</button>
-                        </div>
-
-                </div>
-                <div class="col-sm-6">
-
-
-                </div>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Tambah Data User</h1>
             </div>
-        </div>
-    </div>
 
-    <section class="content">
-        <div class="container-fluid">
+            <!-- Content Row -->
             <div class="row">
 
+                <div class="col-sm-12 col-lg-6">
+                    <form action="" method="POST">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="font-weight-bold">Nama Lengkap</label>
+                            <input type="text" name="name" id="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Lengkap" value="<?= set_value('name') ?>" required>
+                            <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="font-weight-bold">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" value="<?= set_value('email') ?>" required>
+                            <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="font-weight-bold">Password</label>
+                            <input type="password" name="password1" id="password1" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="font-weight-bold">Ulangi Password</label>
+                            <input type="password" name="password2" id="password2" class="form-control" id="exampleInputPassword1" placeholder="Ulangi Password" required>
+                            <?= form_error('password2', '<small class="text-danger pl-3">', '</small>'); ?>
+                        </div>
+
+                        <button type="submit" name="submit" class="btn btn-dark">Buat Akun</button>
+
+                    </form>
+                </div>
+
             </div>
+
         </div>
-    </section>
+    </div>
+</div>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+
+        </div>
+    </div>
+</section>
 </div>

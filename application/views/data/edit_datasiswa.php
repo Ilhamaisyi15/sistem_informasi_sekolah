@@ -2,8 +2,10 @@
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0 ">Edit Data Siswa</h1>
+        <div class="card card-dark ">
+          <div class="card-header">
+            <h5 class="m-0 ">Edit Data Siswa</h5>
+          </div>
         </div>
         <div class="col-sm-6">
 
@@ -56,7 +58,7 @@
         </select>
         <br>
         <br>
-        <button name="submit" type="submit" class="btn btn-danger">Tambah Data</button>
+        <button name="submit" type="submit" class="btn btn-dark">Simpan</button>
 
       </form>
 

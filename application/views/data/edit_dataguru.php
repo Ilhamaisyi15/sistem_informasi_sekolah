@@ -2,8 +2,10 @@
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0 ">Edit Data Guru</h1>
+                <div class="card card-dark ">
+                    <div class="card-header">
+                        <h5 class="m-0 ">Edit Data Guru</h5>
+                    </div>
                 </div>
                 <div class="col-sm-6">
 
@@ -69,7 +71,7 @@
                     <input class="form-control" type="file" name="foto_guru" placeholder="Foto Guru">
                     <?= form_error('foto', '<small class="text-danger pl-3"', '</small>'); ?>
                 </div>
-                <button name="submit" type="submit" class="btn btn-danger">Tambah Data</button>
+                <button name="submit" type="submit" class="btn btn-dark">Simpan</button>
 
             </form>
 

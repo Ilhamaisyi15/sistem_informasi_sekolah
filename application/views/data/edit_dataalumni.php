@@ -54,7 +54,7 @@
                 </select>
                 <br>
                 <br>
-                <button name="submit" type="submit" class="btn btn-danger">Tambah Data</button>
+                <button name="submit" type="submit" class="btn btn-dark">Simpan</button>
 
             </form>
 

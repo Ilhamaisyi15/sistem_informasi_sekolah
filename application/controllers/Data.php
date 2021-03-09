@@ -3,6 +3,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Data extends CI_Controller
 {
+
+	public function __construct()
+	{
+		parent::__construct();
+		if (!$this->session->userdata('email')) {
+			redirect('Auth');
+		}
+	}
+
 	public function data_siswa()
 	{
 		$data['judul'] = "Data Siswa";
@@ -152,7 +161,7 @@ class Data extends CI_Controller
 			if ($fotoGuru) {
 
 				// Format Gambar
-				$config['allowed_types'] = 'gif|jpg|png';
+				$config['allowed_types'] = 'gif|jpg|png|jpeg';
 				// Ukuran Gambar Maksimal 5 MB
 				$config['max_size']     = '5000';
 				// Tujuan Upload Gmbar
@@ -292,6 +301,12 @@ class Data extends CI_Controller
 			$nama = htmlspecialchars($this->input->post('nama'));
 			$alamat = $this->input->post('alamat');
 			$th_lulus = $this->input->post('th_lulus');
+			$this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Data Berhasil ditambah</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>');
 
 			$data = [
 				'nisn' => $nisn,

@@ -8,17 +8,18 @@
                         <li class="breadcrumb-item active" aria-current="page">Fasilitas</li>
                     </ol>
                 </nav>
-                <h3>Fasilitas</h3> <br>
-                <h4 class="type font-weight-bold">Informasi perihal Fasilitas Sekolah menyusul yaa..</h4>
+                <p class="text align-center">
+                    <?= $fasilitas['isi'];  ?>
+                </p>
             </div>
             <div class="col-sm-4">
                 <h4 class="text-center mb-3">Sambutan Kepala Sekolah</h4>
                 <p class="text align-center">
-                <h6>Tuan Guru Yang Dipertuankan Ilham Aisyi</h6>
+                <h6 class="text-muted text-center">Siti Khulasoh, S. Th.I</h6>
                 </p>
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/img-kepala.png" width="200" height="200" class="img-fluid rounded " alt="">
+                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/kepalasekolah.jpg" width="200" height="200" class="img-fluid rounded " alt="">
                     </div>
                     <div class="col-sm-6">
 

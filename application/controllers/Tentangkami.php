@@ -2,13 +2,20 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 class Tentang_kami extends CI_Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+		if (!$this->session->userdata('email')) {
+			redirect('Auth');
+		}
+	}
 
 	public function sejarah()
 	{
 		$data['judul'] = "Sejarah";
 
 		$this->load->model('Model_sejarah');
-		$data['datasiswa'] = $this->Model_sejarah->sejarah();
+		$data['sejarah'] = $this->Model_sejarah->sejarah();
 
 		$this->load->view('template/header', $data);
 		$this->load->view('template/topbar');
