@@ -1,14 +1,5 @@
-<style>
-    .link-berita {
-        color: #696557;
-    }
-
-    .link-berita:hover {
-        color: #696557;
-    }
-</style>
-
 <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -23,34 +14,34 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-8">
                     <nav>
                         <ol class="breadcrumb bg-transparent pl-0">
                             <li class="breadcrumb-item"><a href="<?= base_url('User'); ?>">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Berita</li>
+                            <li class="breadcrumb-item active" aria-current="page">Galeri</li>
                         </ol>
                     </nav>
-                    <p class="text align-center">
-                        <?php foreach ($berita as $b) : ?>
-                            <a class="link-berita" href="<?= base_url("User/detail_berita_user/{$b['id_berita']}") ?>">
-                                <div class="card mb-3" style="max-width: 540px;">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4">
-                                            <div class="card-image-top">
-                                                <img src="<?= base_url('asset/gambar/berita/') . $b['foto']; ?>" alt="<?= $b['foto']; ?>" width="200" height="200" class="img-fluid rounded">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title"><?= $b['judul']; ?></h5>
-                                                <p class="card-text"><?= $b['ringkas']; ?></>
-                                                <p class="card-text"><small class="text-muted"><?= $b['tanggal']; ?></small> / <small><?= $b['status']; ?></small></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="card-header">
+                        <div class="row no-gutters">
+                            <div class="card-body">
+                                <div class="card-img-top">
+                                    <img width="800px" height="400px" class="img-thumbnail" src="<?= base_url('asset/gambar/galeri/') . $galeri['foto']; ?>" alt="">
                                 </div>
-                            </a>
-                        <?php endforeach; ?>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    <?= $galeri['keterangan']; ?>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle">
+                                    <p class="text-right"> <small><?= $galeri['tanggal'];  ?> / <?= $galeri['penulis']; ?>
+                                        </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
                 </div>
                 <div class="col-sm-4">
                     <h4 class="text-center mb-3">Sambutan Kepala Sekolah</h4>
@@ -62,7 +53,6 @@
                             <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/kepalasekolah.jpg" width="200" height="200" class="img-fluid rounded " alt="">
                         </div>
                         <div class="col-sm-6">
-
                             <p class="text-justify">
                                 Bismillahhirrahmanirrahim, Assalamualaikum warahmatullahi wabarakatuh, Salam Sejahtera bagi kita semua, Shalom, Om Swastyastu, Namo Budhaya, Salam Kebajikan.
                             </p>
@@ -72,7 +62,9 @@
                         Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa,bahwasanya dengan Rahmat dan Karunia-Nya lah Website sekolah ini dengan url www.smp-diponegoro.sch.id dapat kami wujudkan. Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama (SMP) Pangeran Diponegoro Batuagung yang saya tunjukan untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses seluruh informasi tentang segala profil, aktifitas/kegiatan serta fasilitas sekolah kami.
                     </p>
                 </div>
+                <!-- /.card -->
             </div>
+            <!-- /.col -->
         </div>
     </section>
 
@@ -135,7 +127,7 @@
 <footer class="footer py-4">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2021</div>
+            <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2020</div>
         </div>
     </div>
 </footer>

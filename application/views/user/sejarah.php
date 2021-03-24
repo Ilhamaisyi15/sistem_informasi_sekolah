@@ -10,22 +10,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Gambar - 1" width="1400" height="700">
-                <div class="carousel-caption">
-                    <h3>Slide 1</h3>
-                </div>
+                <img src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Gambar - 1" width="1400" height="500">
             </div>
             <div class="carousel-item">
                 <img src="<?= base_url('asset/template_user/'); ?>assets/img/selyn1.jpg" alt="Gambar - 2" width="1400" height="500">
-                <div class="carousel-caption">
-                    <h3>Slide 2</h3>
-                </div>
             </div>
             <div class="carousel-item">
                 <img src="<?= base_url('asset/template_user/'); ?>assets/img/selyn2.jpg" alt="Gambar - 3" width="1400" height="500">
-                <div class="carousel-caption">
-                    <h3>Slide 3</h3>
-                </div>
             </div>
         </div>
 
@@ -37,41 +28,43 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
+</section>
 
-    <br>
-    <div class="row">
-        <div class="col-sm-8">
-            <nav>
-                <ol class="breadcrumb bg-transparent pl-0">
-                    <li class="breadcrumb-item"><a href="<?= base_url('User'); ?>">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sejarah</li>
-                </ol>
-            </nav>
-            <p class="text align-center">
-                <?= $sejarah['isi'];  ?>
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <h4 class="text-center mb-3">Sambutan Kepala Sekolah</h4>
-            <p class="text align-center">
-            <h6 class="text-muted text-center">Siti Khulasoh, S. Th.I</h6>
-            </p>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/kepalasekolah.jpg" width="200" height="200" class="img-fluid rounded " alt="">
-                </div>
-                <div class="col-sm-6">
-
-                    <p class="text-justify">
-                        Bismillahhirrahmanirrahim, Assalamualaikum warahmatullahi wabarakatuh, Salam Sejahtera bagi kita semua, Shalom, Om Swastyastu, Namo Budhaya, Salam Kebajikan.
-                    </p>
-                </div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <nav>
+                    <ol class="breadcrumb bg-transparent pl-0">
+                        <li class="breadcrumb-item"><a href="<?= base_url('User'); ?>">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sejarah</li>
+                    </ol>
+                </nav>
+                <p class="text align-center">
+                    <?= $sejarah['isi'];  ?>
+                </p>
             </div>
-            <p class="text-justify">
-                Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa,bahwasanya dengan Rahmat dan Karunia-Nya lah Website sekolah ini dengan url www.smp-diponegoro.sch.id dapat kami wujudkan. Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama (SMP) Pangeran Diponegoro Batuagung yang saya tunjukan untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses seluruh informasi tentang segala profil, aktifitas/kegiatan serta fasilitas sekolah kami.
-            </p>
+            <div class="col-sm-4">
+                <h4 class="text-center mb-3">Sambutan Kepala Sekolah</h4>
+                <p class="text align-center">
+                <h6 class="text-muted text-center">Siti Khulasoh, S. Th.I</h6>
+                </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/kepalasekolah.jpg" width="200" height="200" class="img-fluid rounded " alt="">
+                    </div>
+                    <div class="col-sm-6">
+
+                        <p class="text-justify">
+                            Bismillahhirrahmanirrahim, Assalamualaikum warahmatullahi wabarakatuh, Salam Sejahtera bagi kita semua, Shalom, Om Swastyastu, Namo Budhaya, Salam Kebajikan.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-justify">
+                    Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa,bahwasanya dengan Rahmat dan Karunia-Nya lah Website sekolah ini dengan url www.smp-diponegoro.sch.id dapat kami wujudkan. Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama (SMP) Pangeran Diponegoro Batuagung yang saya tunjukan untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses seluruh informasi tentang segala profil, aktifitas/kegiatan serta fasilitas sekolah kami.
+                </p>
+            </div>
         </div>
-    </div>
 
     </div>
 </section>
@@ -132,11 +125,12 @@
             </div>
         </div>
     </div>
-</section>
-<footer class="footer py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2020</div>
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left" class="text-center">Copyright © SMP Pangeran Diponegoro 2020</div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</section>

@@ -25,7 +25,7 @@
            <!-- /.card-header -->
 
            <a class="btn btn-dark" href="<?= base_url("Data/tambahdatasiswa") ?>">Tambah Data Siswa</a>
-           <table id="example1" class="table table-bordered table-striped">
+           <table id="example1" class="table table-bordered">
              <thead class="thead-dark">
                <tr>
                  <th class="text-center">No</th>

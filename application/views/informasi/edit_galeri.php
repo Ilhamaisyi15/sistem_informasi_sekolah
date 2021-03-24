@@ -36,7 +36,7 @@
                             </div>
                             <input type="hidden" name="id" value="<?= $galeri['id_galeri'] ?>">
                         </div>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-dark">Simpan</button>
                     </form>
                 </div>
             </div>

@@ -37,7 +37,7 @@
         </li>
         <i class="nav-item mt-1">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-school"></i>
+            <i class="nav-icon fas fa-info-circle"></i>
             <p>
               Tentang Kami
               <i class="fas fa-angle-left right"></i>

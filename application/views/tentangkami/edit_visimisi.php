@@ -17,7 +17,7 @@
     <section class="content">
         <div class="container">
             <div class=" row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="card carid-primary">
                     </div>
                     <form action="" method="POST">
@@ -29,7 +29,7 @@
                             <input class="form-control mt-3 " type="text" name="penulis" value="<?= $visimisi['penulis']; ?>">
 
                         </div>
-                        <button type="submit" class="btn btn-dark">Tambah</button>
+                        <button type="submit" class="btn btn-dark">Simpan</button>
                     </form>
                 </div>
             </div>

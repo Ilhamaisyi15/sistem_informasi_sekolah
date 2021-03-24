@@ -89,8 +89,8 @@
            <div class="row">
              <div class="col-sm-2">
                <nav>
-                 <div style="width: 120%;">
-                   <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="10" height="200" class="img-fluid rounded " alt="">
+                 <div style="width: 100%;">
+                   <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="10" height="180" class="img-fluid rounded " alt="">
                  </div>
                </nav>
              </div>

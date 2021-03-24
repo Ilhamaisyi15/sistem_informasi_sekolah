@@ -48,6 +48,23 @@ class Model_informasi extends CI_Model
         $this->db->insert('tb_berita', $berita);
     }
 
+    public function detail_berita_user()
+    {
+        $judul = $this->input->post('judul', true);
+        $isi = $this->input->post('isi', true);
+        $penulis = $this->input->post('penulis', true);
+        $status = $this->input->post('status', true);
+
+        $berita = array(
+            'judul' => $judul,
+            'isi' => $isi,
+            'penulis' => $penulis,
+            'status' => $status
+        );
+
+        $this->db->insert('tb_berita', $berita);
+    }
+
     public function ekskul()
     {
         return $this->db->get('tb_ekskul', ['id_ekskul ' => 1])->row_array();
@@ -130,8 +147,20 @@ class Model_informasi extends CI_Model
 
         $galeri = array(
             'keterangan' => $keterangan,
-            'penulis' => $penulis,
-            'foto' => $foto_baru
+            'penulis' => $penulis
+        );
+
+        $this->db->insert('tb_galeri', $galeri);
+    }
+
+    public function detail_galeri_user()
+    {
+        $keterangan = $this->input->post('keterangan', true);
+        $penulis = $this->input->post('penulis', true);
+
+        $galeri = array(
+            'keterangan' => $keterangan,
+            'penulis' => $penulis
         );
 
         $this->db->insert('tb_galeri', $galeri);

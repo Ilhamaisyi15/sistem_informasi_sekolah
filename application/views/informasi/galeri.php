@@ -25,7 +25,6 @@
                       <table id="example1" class="table table-bordered table-striped">
                           <thead class="thead-dark">
                               <tr>
-
                                   <th class="text-center">Tanggal</th>
                                   <th class="text-center">Foto</th>
                                   <th class="text-center">Keterangan</th>
@@ -41,13 +40,15 @@
                                       <td><?= $gal["keterangan"]; ?></td>
                                       <td><?= $gal["penulis"]; ?></td>
                                       <td>
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opsi</a>
-
-                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                              <a class="dropdown-item" href="<?= base_url('Informasi/edit_galeri/') .  $gal["id_galeri"]; ?>">Edit</a>
-                                              <a onclick="return confirm('Apakah anda ingin menghapus data ini?')" class="dropdown-item" href="<?= base_url('Informasi/hapus_galeri/') . $gal["id_galeri"];  ?>">Hapus</a>
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-dark">Aksi</button>
+                                              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  <span class="sr-only">Toggle Dropdown</span>
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="<?= base_url('Informasi/edit_galeri/') . $gal['id_galeri'];  ?>">Edit</a>
+                                                  <a onclick="return confirm('Apakah anda ingin menghapus informasi ini?')" class="dropdown-item" href="<?= base_url('Informasi/hapus_galeri/') . $gal['id_galeri'];  ?>">Hapus</a>
                                       </td>
-
                                   </tr>
                               <?php endforeach; ?>
                           </tbody>

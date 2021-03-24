@@ -66,7 +66,7 @@ class Informasi extends CI_Controller
             $status = $this->input->post('status');
 
             $this->db->set('ringkas', $isi);
-            $this->db->set('penulis', $judul);
+            $this->db->set('judul', $judul);
             $this->db->set('penulis', $penulis);
             $this->db->set('isi', $isi);
             $this->db->set('status', $status);
@@ -155,6 +155,7 @@ class Informasi extends CI_Controller
                 'judul' => "Detail Berita",
                 'berita' => $berita
             ];
+
             $this->load->view('template/header', $data);
             $this->load->view('template/topbar',);
             $this->load->view('template/sidebar',);
@@ -269,8 +270,7 @@ class Informasi extends CI_Controller
         $this->load->model('Model_informasi');
         $galeri = $this->Model_informasi->galeri();
         $data = [
-            'tanggal' => date('Y-m-d'),
-            'judul' => "galeri",
+            'judul' => "Galeri",
             'galeri' => $galeri
         ];
 
@@ -284,16 +284,12 @@ class Informasi extends CI_Controller
     public function edit_galeri($id_galeri)
     {
         $galeri = $this->Model_informasi->getidgaleri($id_galeri);
-        $this->form_validation->set_rules('judul', 'judul', 'trim|required');
-        // $this->form_validation->set_rules('tanggal', 'tanggal', 'trim|required');
-        $this->form_validation->set_rules('foto', 'foto', 'trim|required');
         $this->form_validation->set_rules('keterangan', 'keterangan', 'trim|required');
         $this->form_validation->set_rules('penulis', 'penulis', 'trim|required');
         if ($this->form_validation->run() == false) {
             $data = [
                 'judul' => "Edit galeri",
                 'galeri' => $galeri,
-                'tanggal' => date('Y-m-d'),
                 'keterangan' => "keterangan",
                 'penulis' => "penulis"
 
@@ -304,12 +300,11 @@ class Informasi extends CI_Controller
             $this->load->view('informasi/edit_galeri', $data);
             $this->load->view('template/footer',);
         } else {
-            $tanggal = $this->input->post('tanggal');
+
             $keterangan = $this->input->post('keterangan');
             $penulis = $this->input->post('penulis');
             $id = $this->input->post('id');
 
-            $this->db->set('tanggal', $tanggal);
             $this->db->set('keterangan', $keterangan);
             $this->db->set('penulis', $penulis);
             $this->db->where('id_galeri', $id);
@@ -326,10 +321,8 @@ class Informasi extends CI_Controller
 
     public function tambah_galeri()
     {
-
-        $galeri['galeri'] = "Tambah galeri";
-        $this->form_validation->set_rules('tanggal', 'tanggal', 'required');
-        $this->form_validation->set_rules('keterangan', 'keterangan', 'required');
+        $galeri['judul'] = "Tambah galeri";
+        $this->form_validation->set_rules('isi', 'isi', 'required');
         $this->form_validation->set_rules('penulis', 'penulis', 'required');
 
         if ($this->form_validation->run() == false) {
@@ -341,7 +334,7 @@ class Informasi extends CI_Controller
             $this->load->view('template/footer', $galeri);
         } else {
 
-            $keterangan = $this->input->post('keterangan');
+            $keterangan = $this->input->post('isi');
             $penulis = $this->input->post('penulis');
 
             // Uploag Gamabar

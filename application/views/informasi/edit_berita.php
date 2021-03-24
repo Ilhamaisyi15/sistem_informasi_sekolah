@@ -17,7 +17,7 @@
     <section class="content">
         <div class="container">
             <div class=" row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="card card-primary">
                     </div>
                     <form action="" method="POST" enctype="multipart/form-data">
@@ -41,7 +41,7 @@
                             </div>
                             <input type="hidden" name="id" value="<?= $berita['id_berita'] ?>">
                         </div>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-dark">Simpan</button>
                     </form>
                 </div>
             </div>

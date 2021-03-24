@@ -243,7 +243,6 @@ class Data extends CI_Controller
 
 			$this->db->where('id_guru', $this->input->post('id_guru'));
 			$this->db->update('tb_guru', $data);
-			// $this->session->set_flashdata()
 			redirect('Data/data_guru');
 		} else {
 			$data['judul'] = "Edit Data guru";

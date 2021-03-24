@@ -20,23 +20,23 @@
                 <nav>
                     <p class="text align-center">
                         <?php foreach ($galeri as $gal) : ?>
-                            <!-- <a class="link-berita" href="<?= site_url("User/detail_berita_user/{$gal['id_berita']}") ?>"> -->
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="<?php base_url('asset/gambar/galeri/') . $gal['foto']; ?>" class="card-img">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><?= $gal['keterangan']; ?></h5>
-                                    <p class="card-text"><?= $gal['penulis']; ?></>
-                                    <p class="card-text"><small class="text-muted"><?= $gal['tanggal']; ?></small> / <small><?= $gal['penulis']; ?></small></p>
+                            <a class="link-galeri" href="<?= base_url("User/detail_galeri_user/{$gal['id_galeri']}") ?>">
+                                <!-- <a class="link-berita" href="<?= site_url("User/detail_berita_user/{$gal['id_berita']}") ?>"> -->
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="<?= base_url('asset/gambar/galeri/') . $gal['foto']; ?>" alt="<?= $gal['foto']; ?>" width="200" height="200" class="img-fluid rounded">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?= $gal['keterangan']; ?></h5>
+                                                <p class="card-text"><small class="text-muted"><?= $gal['tanggal']; ?></small> / <small><?= $gal['penulis']; ?></small></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                <?php endforeach; ?>
+                            </a>
+                        <?php endforeach; ?>
                 </nav>
 
             </div>

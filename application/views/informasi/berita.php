@@ -5,7 +5,7 @@
           <div class="container-fluid">
               <div class="row mb-2">
                   <div class="col-sm-12">
-                      <h1 class="text-center font-weight-bolder" class="m-0">Berita Sekolah SMP Pangeran Diponegoro</h1><br>
+                      <h1 class="text-center font-weight-bolder" class="m-0">Berita SMP Pangeran Diponegoro</h1><br>
                   </div><!-- /.col -->
                   <div class="col-sm-6">
                   </div><!-- /.col -->
@@ -15,7 +15,7 @@
       <!-- /.content-header -->
       <!-- Main content -->
       <section class="content">
-          <div class="container-fluid">
+          <div class="container">
               <div class="row">
                   <div class="col-12">
                       <div class="card">
@@ -42,13 +42,16 @@
                                       <td><?= $bt['ringkas'];  ?>...</td>
                                       <td><?= $bt['status'];  ?></td>
                                       <td><?= $bt['penulis'];  ?></td>
-
                                       <td>
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opsi</a>
-                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                              <a class="dropdown-item" href="<?= base_url('Informasi/detail_berita/') . $bt['id_berita'];  ?>">Detail</a>
-                                              <a class="dropdown-item" href="<?= base_url('Informasi/edit_berita/') . $bt['id_berita'];  ?>">Edit</a>
-                                              <a onclick="return confirm('Apakah anda ingin menghapus informasi ini?')" class="dropdown-item" href="<?= base_url('Informasi/hapus_berita/') . $bt['id_berita'];  ?>">Hapus</a>
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-dark">Aksi</button>
+                                              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  <span class="sr-only">Toggle Dropdown</span>
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="<?= base_url('Informasi/detail_berita/') . $bt['id_berita'];  ?>">Detail</a>
+                                                  <a class="dropdown-item" href="<?= base_url('Informasi/edit_berita/') . $bt['id_berita'];  ?>">Edit</a>
+                                                  <a onclick="return confirm('Apakah anda ingin menghapus informasi ini?')" class="dropdown-item" href="<?= base_url('Informasi/hapus_berita/') . $bt['id_berita'];  ?>">Hapus</a>
                                       </td>
                                   </tr>
                                   <?php $nomer++; ?>

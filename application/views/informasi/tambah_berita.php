@@ -13,8 +13,8 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="card card-primary ">
+                <div class="col-md-12">
+                    <div class="card card-dark ">
                     </div>
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
@@ -37,7 +37,7 @@
                             </div>
 
                         </div>
-                        <button name="submit" type="submit" class="btn btn-primary">Tambah</button>
+                        <button name="submit" type="submit" class="btn btn-dark">Tambah</button>
                     </form>
                 </div>
             </div>

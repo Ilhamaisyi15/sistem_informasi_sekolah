@@ -147,9 +147,9 @@ class User extends CI_Controller
         ];
 
         $this->load->view('user/template/header', $data);
-        $this->load->view('user/template/navbar');
-        $this->load->view('user/berita');
-        $this->load->view('user/template/footer');
+        $this->load->view('user/template/navbar', $data);
+        $this->load->view('user/berita', $data);
+        $this->load->view('user/template/footer', $data);
     }
     public function detail_berita_user($id_berita)
     {
@@ -164,11 +164,10 @@ class User extends CI_Controller
                 'judul' => "Detail Berita",
                 'berita' => $berita
             ];
-            $this->load->view('template/header', $data);
-            $this->load->view('template/topbar',);
-            $this->load->view('template/sidebar',);
-            $this->load->view('informasi/detail_berita_user', $data);
-            $this->load->view('template/footer',);
+            $this->load->view('user/template/header', $data);
+            $this->load->view('user/template/navbar', $data);
+            $this->load->view('user/detail_berita_user', $data);
+            $this->load->view('user/template/footer', $data);
         } else {
             $judul = $this->input->post('judul');
             $penulis = $this->input->post('penulis');
@@ -184,7 +183,7 @@ class User extends CI_Controller
             $this->db->set('foto', $foto_baru);
             $this->db->where('id_berita', $id);
             $this->db->update('tb_berita');
-            redirect('Informasi/berita');
+            redirect('User/berita');
         }
     }
 
@@ -224,5 +223,34 @@ class User extends CI_Controller
         $this->load->view('user/template/navbar');
         $this->load->view('user/galeri');
         $this->load->view('user/template/footer');
+    }
+    public function detail_galeri_user($id_galeri)
+    {
+        $galeri = $this->Model_informasi->getidgaleri($id_galeri);
+        $this->form_validation->set_rules('keterangan', 'keterangan', 'trim|required');
+        $this->form_validation->set_rules('penulis', 'penulis', 'trim|required');
+        $this->form_validation->set_rules('foto', 'foto', 'trim|required');
+        if ($this->form_validation->run() == false) {
+            $data = [
+                'judul' => "Detail galeri",
+                'galeri' => $galeri
+            ];
+            $this->load->view('user/template/header', $data);
+            $this->load->view('user/template/navbar', $data);
+            $this->load->view('user/detail_galeri', $data);
+            $this->load->view('user/template/footer', $data);
+        } else {
+            $penulis = $this->input->post('penulis');
+            $id = $this->input->post('id');
+            $keterangan = $this->input->post('keterangan');
+            $foto_baru = $this->input->post('foto');
+
+            $this->db->set('penulis', $penulis);
+            $this->db->set('keterangan', $keterangan);
+            $this->db->set('foto', $foto_baru);
+            $this->db->where('id_galeri', $id);
+            $this->db->update('tb_galeri');
+            redirect('User/galeri');
+        }
     }
 }

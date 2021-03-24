@@ -17,13 +17,13 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?= base_url('asset/template_user/'); ?>css/styles.css" rel="stylesheet" />
 </head>
-<header>
+<!-- <header>
     <div class="container">
         <div class="row">
 
         </div>
     </div>
-</header>
+</header> -->
 
 <body id="page-top">
     <!-- Navigation-->
@@ -197,11 +197,11 @@
                 <h4 class="text-center mb-6">Berita Terkini</h4>
             </div>
             <div class="row mt-5">
-                <div class="col-sm-6">
+                <div class="col-sm-8">
                     <div class="row">
                         <div class="col-sm-6 mb-4">
-                            <a href="">
-                                <div class="card" style="width: 100%;">
+                            <a class="link-berita" href="">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="text-black-50">Gunung Everest</h5>
@@ -212,7 +212,7 @@
                         </div>
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-2.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="text-black-50">London Kota</h5>
@@ -224,7 +224,7 @@
 
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-3.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="text-black-50">Bali Indonesia</h4>
@@ -235,7 +235,7 @@
                         </div>
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-4.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="text-black-50">France City</h4>

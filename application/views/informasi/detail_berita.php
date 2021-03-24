@@ -25,7 +25,7 @@
                           <tr>
                               <td>Foto</td>
                               <td>
-                                  <img width="500px" height="500px" class="img-thumbnail" src="<?= base_url('asset/gambar/berita/') . $berita['foto']; ?>" alt="">
+                                  <img width="500px" height="400px" class="img-thumbnail" src="<?= base_url('asset/gambar/berita/') . $berita['foto']; ?>" alt="">
                               </td>
                           </tr>
                           <tr>
@@ -45,7 +45,7 @@
                               <td><?= $berita['penulis']; ?></td>
                           </tr>
                       </table> <br>
-                      <a class="btn btn-primary" href="<?= base_url("Informasi/berita") ?>">Kembali</a>
+                      <a class="btn btn-dark" href="<?= base_url("Informasi/berita") ?>">Kembali</a>
                       <!-- /.card-body -->
                   </div>
                   <!-- /.card -->
