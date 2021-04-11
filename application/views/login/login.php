@@ -22,53 +22,106 @@
     <style>
         .h1,
         h1 {
-            font-size: 30px;
+            font-size: 60px;
+            text-align: center;
+            color: darkblue;
+            /* margin-top: 20px; */
+            font-style: unset;
+            margin-top: 5px;
+
         }
 
         .h2,
         h2 {
+            font-size: 50px;
+            text-align: center;
+            color: darkblue;
+            margin-bottom: 30px;
+
+        }
+
+        .login-logo p {
+            font-style: unset;
             font-size: 40px;
+            color: darkblue;
+            margin-top: 0px;
+        }
+
+        .img,
+        img {
+            margin-left: 510px;
+            margin-top: 10px;
+        }
+
+
+        body {
+            background-image: url(img/gambar1.png);
+            background-color: lightblue;
+        }
+
+        .login-box,
+        login-box body {
+            margin-top: 0px;
+            flex-basis: 400px;
+            padding: 0px;
+        }
+
+        .col-6,
+        col-6 {
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body class="hold-transition login-page">
-    <div class="login-box">
-        <div class="login-logo">
-            <?= $this->session->userdata('message');  ?>
-
-            <h1 class="text-white">HALAMAN LOGIN</h1>
-            <!-- <h2 class="text-light">SMP PANGERAN DIPONEGORO</h2> -->
-        </div> <br>
-        <!-- /.login-logo -->
-        <div class="login-box-body">
-            <p class="login-box-msg">Masuk untuk memulai sesi anda</p>
-
-            <form action="<?= base_url('Auth/index');  ?>" method="post">
-                <div class="form-group has-feedback">
-                    <input type="email" name="email" class="form-control" placeholder="Email" />
-                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div style="width: 100%;">
+                    <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="150" height="120" class="img-fluid rounded " alt="">
                 </div>
-                <div class="form-group has-feedback">
-                    <input type="password" name="password" class="form-control" placeholder="Password" />
-                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="col-6">
+                <h1 class="text-white">SMP</h1>
+                <div class="login-logo">
+                    <p>Pangeran Diponegoro</p>
                 </div>
-                <div class="row">
-                    <div class="col-xs-8">
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">
-                            Sign In
-                        </button>
-                    </div>
-                    <!-- /.col -->
-                </div>
-            </form>
-            <!-- /.social-auth-links -->
-            <a href="<?= base_url('Auth/tambah_data_user/'); ?>" class="text-center">Daftar Keanggotaan Baru</a>
+            </div>
         </div>
-        <!-- /.login-box-body -->
+
+        <div class="login-box">
+            <div class="login-logo">
+                <?= $this->session->userdata('message');  ?>
+            </div>
+            <!-- /.login-logo -->
+            <div class="login-box-body">
+                <p class="login-box-msg">Masuk untuk memulai sesi anda</p>
+                <form action="<?= base_url('Auth/index');  ?>" method="post">
+                    <div class="form-group has-feedback">
+                        <input type="email" name="email" class="form-control" placeholder="Email" />
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="password" name="password" class="form-control" placeholder="Password" />
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-xs-4">
+                            <button type="submit" class="btn btn-primary btn-block btn-flat">
+                                Sign In
+                            </button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+                <!-- /.social-auth-links -->
+                <a href="<?= base_url('Auth/tambahDataUser/'); ?>" class="text-center">Daftar Keanggotaan Baru</a>
+            </div>
+            <!-- /.login-box-body -->
+        </div>
     </div>
     <!-- /.login-box -->
 

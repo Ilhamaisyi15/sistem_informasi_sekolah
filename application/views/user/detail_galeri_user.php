@@ -30,6 +30,11 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-text text-justify">
+                                    <?= $galeri['judul']; ?>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
                                     <?= $galeri['keterangan']; ?>
                                 </div>
                             </div>

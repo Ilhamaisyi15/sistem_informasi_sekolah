@@ -25,7 +25,7 @@
                                 <div class="card mb-3" style="max-width: 540px;">
                                     <div class="row no-gutters">
                                         <div class="col-md-4">
-                                            <img src="<?= base_url('asset/gambar/galeri/') . $gal['foto']; ?>" alt="<?= $gal['foto']; ?>" width="200" height="200" class="img-fluid rounded">
+                                            <img src="<?= base_url('asset/gambar/galeri/') . $gal['foto']; ?>" alt="<?= $gal['foto']; ?>" width="600" height="600" class="img-fluid rounded">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">

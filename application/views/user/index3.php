@@ -20,63 +20,65 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
-        <div class="image">
-            <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="50" height="50" class="img-circle elevation-2" alt="">
-        </div>
-        <!-- <div style="width: 10%;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
+            <div class="image">
+                <img src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="50" height="50" class="img-circle elevation-2" alt="">
+            </div>
+            <!-- <div style="width: 10%;">
             <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/team/logo_dipo.png" width="50" height="50" class="img-fluid rounded" alt="">
             <h6 class="text-white text-align-center">SMP Dipo</h6>
         </div> -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Kami </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="<?= base_url('User/sejarah'); ?>">Sejarah</a>
-                        <a class="dropdown-item" href="<?= base_url("User/visimisi");  ?>">Visi & Misi</a>
-                        <a class="dropdown-item" href="<?= base_url("User/struktur");  ?>">Struktur Organisasi</a>
-                        <a class="dropdown-item" href="<?= base_url("User/fasilitas"); ?>">Fasilitas</a>
-                        <a class="dropdown-item" href="<?= base_url("User/tatatertib"); ?>">Tata Tertib</a></a>
-                        <a class="dropdown-item" href="<?= base_url("User/prestasi"); ?>">Prestasi</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Warga Sekolah
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="<?= base_url("User/dataGuruUser"); ?>">Daftar Guru</a>
-                        <a class="dropdown-item" href="<?= base_url("User/DataSiswaUser"); ?>">Daftar Siswa</a>
-                        <a class="dropdown-item" href="<?= base_url("User/dataAlumniUser"); ?>">Daftar Alumni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Kami </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?= base_url('User/sejarah'); ?>">Sejarah</a>
+                            <a class="dropdown-item" href="<?= base_url("User/visimisi");  ?>">Visi & Misi</a>
+                            <a class="dropdown-item" href="<?= base_url("User/struktur");  ?>">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="<?= base_url("User/fasilitas"); ?>">Fasilitas</a>
+                            <a class="dropdown-item" href="<?= base_url("User/tatatertib"); ?>">Tata Tertib</a></a>
+                            <a class="dropdown-item" href="<?= base_url("User/prestasi"); ?>">Prestasi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Warga Sekolah
                         </a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/berita"); ?>">Berita</a></li>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ekskul"); ?>">Ekstrakulikuler</a></li>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/galeri"); ?>">Galeri</a></li>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ppdb"); ?>">PPDB</a></li>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url('Auth'); ?>">Login</a></li>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?= base_url("User/dataGuruUser"); ?>">Daftar Guru</a>
+                            <a class="dropdown-item" href="<?= base_url("User/DataSiswaUser"); ?>">Daftar Siswa</a>
+                            <a class="dropdown-item" href="<?= base_url("User/dataAlumniUser"); ?>">Daftar Alumni</a>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/berita"); ?>">Berita</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ekskul"); ?>">Ekstrakulikuler</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/galeri"); ?>">Galeri</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url("User/ppdb"); ?>">PPDB</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url('Auth'); ?>">Login</a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
@@ -89,15 +91,76 @@
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
+            <section class="page-section" id="services">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Tentang Kami</h2>
+                        <br><br>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Pengajar Yang Berpengalaman</h4>
+                            <p class="text-muted">
+                                Guru pengajar SMP Pangeran Diponegoro merupakan pengajar dengan keahlian di bidang mata pelajaran masing-masing, serta penerapan pembelajaran yang
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Perpustakaan SMP Pangeran Diponegoro</h4>
+                            <p class="text-muted">
+                                Perpustakaan sekolah menyediakan beraneka ragam sumber bacaan dan referensi, serta merupakan tempat belajar dengan berbagai fasilitas yang ada.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-university fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Fasilitas Pembelajaran Yang Lengkap</h4>
+                            <p class="text-muted">
+                                SMP Pangeran Diponegoro memiliki beberapa fasilitas pendukung pembelajaran yang lengkap, diantaranya Laboraturium, Prakarya, Lab.Agama, Lapangan Bola, Lapangan Voli, dll.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Prestasi Sekolah</h4>
+                            <p class="text-muted">
+                                Prestasi sekolah yang diperoleh bermacam-macam, mulai dari bidang akademik maupun non akademik dengan prestasi tingkat daerah maupun nasional.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-3x">
+                                <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fas fa-universal-access fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Bermacam Ekstrakulikuler</h4>
+                            <p class="text-muted">
+                                Pilihan ekstrakurikuler di SMP Pangeran Diponegoro bermacam-macam adanya, mulai dari bidang akademik, olahraga, kesenian, dan lain sebagainya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div class="col-sm-8">
                 <h4 class="text-center mb-6">Berita Terkini</h4>
             </div>
             <div class="row mt-5">
-                <div class="col-sm-6">
+                <div class="col-sm-8">
                     <div class="row">
                         <div class="col-sm-6 mb-4">
-                            <a href="">
-                                <div class="card" style="width: 100%;">
+                            <a class="link-berita" href="">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-1.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="text-black-50">Gunung Everest</h5>
@@ -108,7 +171,7 @@
                         </div>
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-2.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="text-black-50">London Kota</h5>
@@ -120,7 +183,7 @@
 
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-3.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="text-black-50">Bali Indonesia</h4>
@@ -131,7 +194,7 @@
                         </div>
                         <div class="col-sm-6 mb-4 ">
                             <a href="">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 80%;">
                                     <img class="card-img-top" src="<?= base_url('asset/template_user/'); ?>assets/img/berita/berita-4.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="text-black-50">France City</h4>

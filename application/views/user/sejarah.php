@@ -69,9 +69,6 @@
     </div>
 </section>
 
-<!-- <footer class="container">
-    <p style="text-align: center;">&copy; SMP Pangeran Diponegoro 2021 </p>
-</footer> -->
 <section class="page-section" id="contact">
     <div class="container">
         <div class="text-center">

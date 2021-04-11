@@ -151,6 +151,7 @@ class User extends CI_Controller
         $this->load->view('user/berita', $data);
         $this->load->view('user/template/footer', $data);
     }
+
     public function detail_berita_user($id_berita)
     {
         $berita = $this->Model_informasi->getidberita($id_berita);
@@ -220,9 +221,9 @@ class User extends CI_Controller
         ];
 
         $this->load->view('user/template/header', $data);
-        $this->load->view('user/template/navbar');
-        $this->load->view('user/galeri');
-        $this->load->view('user/template/footer');
+        $this->load->view('user/template/navbar', $data);
+        $this->load->view('user/galeri', $data);
+        $this->load->view('user/template/footer', $data);
     }
     public function detail_galeri_user($id_galeri)
     {
@@ -241,14 +242,17 @@ class User extends CI_Controller
             $this->load->view('user/template/footer', $data);
         } else {
             $penulis = $this->input->post('penulis');
-            $id = $this->input->post('id');
+            $judul = $this->input->post('judul');
             $keterangan = $this->input->post('keterangan');
             $foto_baru = $this->input->post('foto');
+            $id = $this->input->post('id');
 
+            $this->db->set('judul', $judul);
             $this->db->set('penulis', $penulis);
             $this->db->set('keterangan', $keterangan);
             $this->db->set('foto', $foto_baru);
             $this->db->where('id_galeri', $id);
+
             $this->db->update('tb_galeri');
             redirect('User/galeri');
         }

@@ -155,11 +155,13 @@ class Model_informasi extends CI_Model
 
     public function detail_galeri_user()
     {
+        $judul = $this->input->post('judul', true);
         $keterangan = $this->input->post('keterangan', true);
         $penulis = $this->input->post('penulis', true);
 
         $galeri = array(
             'keterangan' => $keterangan,
+            'judul' => $judul,
             'penulis' => $penulis
         );
 
